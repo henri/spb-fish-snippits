@@ -1,2 +1,17 @@
-# spb-fish-snippits
-FISH shell snippits to support the SPB (start-private-browser)
+# SPB specific fish snippits
+
+These FISH snippits are specific to the [SPB (Start Private Browser)](https://github.com/henri/spb) project.
+
+This repository includes [FISH](https://fishshell.com/) code, functions, completions, alias and other related snippits which intergrate into the SPB project.
+
+Below you will also find an [installer file](spb-fish-function-installer.bash) and a [kick off file](https://gist.github.com/henri/spb-fish-snippits#file-spb-fish-function-installer-kickoff-bash). Copy and paste the kick off file into a BASH shell to start installation of the spb fish functions support files. If you install via the [SPB install script](https://github.com/henri/spb/blob/main/500.spb-install-script.bash) and already have the fish shell installed on your system, then during the install you will be prompted to update/install these spb related fish snippits.
+
+With these spb specific fish snippits configured on your system. Initating web searches and conversations from the shell will get you moving fast in the current. As such searching for realivent information in the vast oceans of the inerent will hopefully be a little easier each day.
+
+Functions include [spb-pai](https://gist.github.com/henri/4f034f04b35c01e089e98350c902bda8#file-spb-perlexity-ai-fish) for starting multiple simultanius converstations with [perplexity ai](https://www.perplexity.ai/) in a private browser window using SPB.
+
+In addition to functions, there are also auto completions to make using the SPB via the command line a little easier. Just press tab to get some hopefully helpful completion and explanations as you work.
+
+Note that if you override the spb command and add specific flags which firefox (for instance) will not recognise, then these snippits will fail to work with firefox. To work around this, it is reccomended that you create custom functions for firefox and it's drivitives. If I come up with a good way to make this work, then I will update this message. Right now SPB FireFox browser support is still experimental. 
+
+Have fun swimming :tropical_fish:
