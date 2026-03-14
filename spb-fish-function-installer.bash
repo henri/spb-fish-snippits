@@ -9,7 +9,7 @@
 #
 # This script downloads and the
 # files from this URL :
-# https://gist.github.com/henri/4f034f04b35c01e089e98350c902bda8
+# https://github.com/henri/spb-fish-snippits
 #
 # Initial release only supports fish shell functions.
 #
@@ -36,10 +36,10 @@
 SPB_BUILD_DIRECTORY_NAME="spb-build-fish-functions"
 SPB_DOWNLOAD_DIRECTORY_NAME="spb-fish-functions-latest"
 
-# link to gist which has all the data
-fish_spb_snippits_gist_link="https://gist.github.com/henri/4f034f04b35c01e089e98350c902bda8"
+# link to repostiroy which has all the data
+fish_spb_snippits_repository_link="https://github.com/henri/spb-fish-snippits"
 
-# list of fish functions to load from this gist # this list is not including alias such as 'spb' and 'start-private-browser' 
+# list of fish functions to load from this repository # this list is not including alias such as 'spb' and 'start-private-browser' 
 # do not add spb.fish - that will overwrite the way people customise their settings. BADBADBAD!
 functions_to_load="
 spb-yt.fish
@@ -111,7 +111,7 @@ echo ""
 
 # clone a copy of the latest version into the temp directory
 echo "Downloading latest SPB fish functions ..."
-git clone --progress --depth 1 --single-branch --branch=main ${fish_spb_snippits_gist_link} ${SPB_DOWNLOAD_DIRECTORY_NAME} 2>&1
+git clone --progress --depth 1 --single-branch --branch=main ${fish_spb_snippits_repository_link} ${SPB_DOWNLOAD_DIRECTORY_NAME} 2>&1
 if [[ $? != 0 ]] ; then
     echo ""
     echo "ERROR! : Sucking down latest version from git!"
@@ -335,7 +335,7 @@ echo "    uninstall spb fish auto-completions : "
 echo "        rm -v ~/.config/fish/completions/spb-completions.fish"
 echo "" ; echo "" 
 echo "Documentation and usage instructions for spb fish functions is available from : "
-echo "${fish_spb_snippits_gist_link}" ; echo ""
+echo "${fish_spb_snippits_repository_link}" ; echo ""
 
 # clean up
 cd /tmp/ && rm -rf ${temporary_build_directory}
