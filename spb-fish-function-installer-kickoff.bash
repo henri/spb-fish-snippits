@@ -2,7 +2,7 @@
 
 /bin/bash -c "$(curl -fsSL \
 https://raw.githubusercontent.com/henri/\
-refs/heads/main/\
+spb-fish-snippits/refs/heads/main/\
 spb-fish-function-installer.bash)"
 
 # note this is until a fisher setup is established. 
