@@ -11,8 +11,8 @@
 # files from this URL :
 # https://github.com/henri/spb-fish-snippits
 #
-# This script typically is not started manually.
-# Typically this script is launched when installing or updating SPB :
+# This script may be run manually. However, typically this
+# script is executed when installing or updating SPB :
 # https://github.com/henri/spb
 #
 # version 1.0 - initial release
