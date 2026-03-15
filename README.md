@@ -8,7 +8,7 @@ Below you will also find an [installer file](spb-fish-function-installer.bash) a
 
 Initating web searches and conversations from the fish shell will be [easy-as](https://github.com/henri/spb/blob/main/FAQ.md#what-is-easy-as) with these snippits [loaded](https://github.com/henri/spb/blob/main/README.md#floppy_disk-installation) on your system! [Get moving](https://github.com/henri/spb/blob/main/README.md#fish-shell-wrappers) in the worlds digital currents.
 
-Functions include [spb-pai](https://gist.github.com/henri/4f034f04b35c01e089e98350c902bda8#file-spb-perlexity-ai-fish) for starting multiple simultanius converstations with [perplexity ai](https://www.perplexity.ai/) in a private browser window using SPB.
+Functions include ```[spb-pai]```(https://github.com/henri/spb-fish-snippits/blob/main/spb-perlexity-ai.fish) for starting multiple simultanius converstations with [perplexity ai](https://www.perplexity.ai/) in a private browser window using SPB, ```spb0-yt```(https://github.com/henri/spb-fish-snippits/blob/main/spb-yt.fish) for quickly locating videos from [YouTube](https://youtube.com) and much [more](https://github.com/henri/spb/blob/main/README.md#fish-shell-wrappers).
 
 In addition to functions, there are also auto completions to make using the SPB via the command line a little easier. Just press tab to get some hopefully helpful completion and explanations as you work.
 
