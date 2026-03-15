@@ -3,8 +3,8 @@
 # This fish completions are part of the SPB project :
 # http://github.com/henri/spb/
 #
-# Documentation on updating and creating your own
-# fish completions is availble from the link below :
+# Documentation on updating this or creating your own
+# custom completion for the fish shell is available from :
 # https://fishshell.com/docs/current/completions.html
 #
 # version 1.0 - inital basic implimentation
