@@ -11,7 +11,9 @@
 # files from this URL :
 # https://github.com/henri/spb-fish-snippits
 #
-# Initial release only supports fish shell functions.
+# This script typically is not started manually.
+# Typically this script is launched when installing or updating SPB :
+# https://github.com/henri/spb
 #
 # version 1.0 - initial release
 # version 1.1 - bug fixes
