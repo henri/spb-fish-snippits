@@ -1,5 +1,12 @@
 # start-private-browser completions
 #
+# This fish completions are part of the SPB project :
+# http://github.com/henri/spb/
+#
+# Documentation on updating and creating your own
+# fish completions is availble from the link below :
+# https://fishshell.com/docs/current/completions.html
+#
 # version 1.0 - inital basic implimentation
 # version 1.1 - improvements for alias wrapping
 # version 1.2 - added improved option descriptions
