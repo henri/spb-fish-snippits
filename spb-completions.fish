@@ -41,7 +41,7 @@ complete -c start-private-browser -f -l template-path      -d 'override default 
 
 # configuration file
 complete -c start-private-browser -f -l edit-configuration -d 'edit active spb configuration file'
-complete -c start-private-browser -f -l --configuration-variables -d 'list possible spb.config enviroment variables'
+complete -c start-private-browser -f -l configuration-variables -d 'list possible spb.config enviroment variables'
 
 
 # supporting fuctions - dynamic list generation
