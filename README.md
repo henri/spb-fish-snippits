@@ -4,7 +4,7 @@ These FISH snippits are specific to the [SPB (Start Private Browser)](https://gi
 
 This repository includes [FISH](https://fishshell.com/) code, functions, completions, alias and other related snippits which intergrate into the SPB project.
 
-The index of these fish snippits inlcudes <b>[usage examples](https://github.com/henri/spb#fish-shell-wrappers)</b> to assit with using them on a daily basis.
+The index of these fish snippits inlcudes <b>[usage examples](https://github.com/henri/spb#fish-shell-wrappers)</b> outlinging on how to use them to quickly access informaiton from the internet.
 
 Below you will also find an [installer file](spb-fish-function-installer.bash) and a [kick off file](https://github.com/henri/spb-fish-snippits/blob/main/spb-fish-function-installer-kickoff.bash). Copy and paste the kick off file into a BASH shell to start installation of the spb fish functions support files. If you install via the [SPB install script](https://github.com/henri/spb/blob/main/500.spb-install-script.bash) and already have the fish shell installed on your system, then during the install you will be prompted to update/install these spb related fish snippits.
 
