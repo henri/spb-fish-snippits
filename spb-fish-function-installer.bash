@@ -57,6 +57,7 @@ spb-bit.fish
 spb-ody.fish
 spb-twitch.fish
 spb-smart.fish
+spb-claude-ai.fish
 "
 
 # special symbold
