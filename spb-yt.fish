@@ -22,7 +22,7 @@ function spb-yt
                 case '--help' '--list' '-ls' '-l' '--list-templates' '--update' '--tor' '--list-browsers' 
                     echo "$argv[1]"
                     break
-                case  '--standard' '--quite' '--verbose' '--about'
+                case  '--standard' '--quite' '--quiet' '--verbose' '--about'
                     echo "$argv[1]"
                 case '*'
                     echo (echo "https://www.youtube.com/results?search_query=$argv[1]" | tr " " "+")
