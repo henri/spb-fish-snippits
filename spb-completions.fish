@@ -11,6 +11,8 @@
 # version 1.1 - improvements for alias wrapping
 # version 1.2 - added improved option descriptions
 # version 1.3 - added support for dynamic lists
+# version 1.4 - updates to correct quite calls
+# version 1.5 - minor description update for force-stop option
 #
 
 # get help
