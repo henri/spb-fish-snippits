@@ -21,7 +21,7 @@ complete -c start-private-browser -f -l help               -d 'display help'
 # generic options
 complete -c start-private-browser -f -l standard           -d 'start browser without incognito option'
 complete -c start-private-browser -f -l quiet              -d 'suppress important output information'
-complete -c start-private-browser -f -l verbose            -d 'provide additional information output'
+complete -c start-private-browser -f -l verbose            -d 'provide additional output information'
 complete -c start-private-browser -f -l list               -d 'list of active spb sessions'
 complete -c start-private-browser -f -l force-stop         -d 'kill a hung browser session' -r -a '(__start_private_browser_list_sessions)'
 complete -c start-private-browser -f -l update             -d 'update SPB system and fish snippets'
