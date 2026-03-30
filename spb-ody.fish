@@ -17,7 +17,7 @@ function spb-ody
                 case '--help' '--list' '-ls' '-l' '--list-templates' '--update' '--tor' '--list-browsers'
                     echo "$argv[1]"
                     break
-                case  '--standard' '--quite' '--verbose' '--about'
+                case  '--standard' '--quite' '--quiet' '--verbose' '--about'
                     echo "$argv[1]"
                 case '*'
                     echo (echo "https://odysee.com/\$/search?q=$argv[1]" | tr " " "+")
