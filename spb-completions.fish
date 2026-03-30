@@ -17,31 +17,31 @@
 #
 
 # get help
-complete -c start-private-browser -f -l help               -d 'display help'
+complete -c start-private-browser -f -l help                     -d 'display help'
 
 # generic options
-complete -c start-private-browser -f -l standard           -d 'start browser without incognito option'
-complete -c start-private-browser -f -l quiet              -d 'suppress important output information'
-complete -c start-private-browser -f -l verbose            -d 'provide additional output information'
-complete -c start-private-browser -f -l list               -d 'list of active spb sessions'
-complete -c start-private-browser -f -l force-stop         -d 'kill a hung browser session' -r -a '(__start_private_browser_list_sessions)'
-complete -c start-private-browser -f -l update             -d 'update SPB system and fish snippets'
+complete -c start-private-browser -f -l standard                 -d 'start browser without incognito option'
+complete -c start-private-browser -f -l quiet                    -d 'suppress important output information'
+complete -c start-private-browser -f -l verbose                  -d 'provide additional output information'
+complete -c start-private-browser -f -l list                     -d 'list of active spb sessions'
+complete -c start-private-browser -f -l force-stop               -d 'kill a hung browser session' -r -a '(__start_private_browser_list_sessions)'
+complete -c start-private-browser -f -l update                   -d 'update SPB system and fish snippets'
 
 # multi-browser support
-complete -c start-private-browser -f -l browser            -d 'configure the use of a specific browser' -r -a '(__start_private_browser_list_browsers)'
-complete -c start-private-browser -f -l list-browsers      -d 'provide a list default supported browser names'
-complete -c start-private-browser -f -l browser-path       -d 'specify specific path to browser executable' -r
+complete -c start-private-browser -f -l browser                  -d 'configure the use of a specific browser' -r -a '(__start_private_browser_list_browsers)'
+complete -c start-private-browser -f -l list-browsers            -d 'provide a list default supported browser names'
+complete -c start-private-browser -f -l browser-path             -d 'specify specific path to browser executable' -r
 
 # templates (usage & management)
-complete -c start-private-browser -f -l new-template       -d 'create new template' -r
-complete -c start-private-browser -f -l list-templates     -d 'list available templates'
-complete -c start-private-browser -f -l edit-template      -d 'edit existing template' -r -a '(__start_private_browser_list_templates)'
-complete -c start-private-browser -f -l template           -d 'load existing template' -r -a '(__start_private_browser_list_templates)'
-complete -c start-private-browser -f -l template-path      -d 'override default spb-templates path' -r
+complete -c start-private-browser -f -l new-template             -d 'create new template' -r
+complete -c start-private-browser -f -l list-templates           -d 'list available templates'
+complete -c start-private-browser -f -l edit-template            -d 'edit existing template' -r -a '(__start_private_browser_list_templates)'
+complete -c start-private-browser -f -l template                 -d 'load existing template' -r -a '(__start_private_browser_list_templates)'
+complete -c start-private-browser -f -l template-path            -d 'override default spb-templates path' -r
 
 # configuration file
-complete -c start-private-browser -f -l edit-configuration -d 'edit active spb configuration file'
-complete -c start-private-browser -f -l configuration-variables -d 'list possible spb.config enviroment variables'
+complete -c start-private-browser -f -l edit-configuration       -d 'edit active spb configuration file'
+complete -c start-private-browser -f -l configuration-variables  -d 'list possible spb.config enviroment variables'
 
 
 # supporting fuctions - dynamic list generation
