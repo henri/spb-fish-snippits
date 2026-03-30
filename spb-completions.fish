@@ -21,7 +21,7 @@ complete -c start-private-browser -f -l standard           -d 'start browser wit
 complete -c start-private-browser -f -l quiet              -d 'suppress important output information'
 complete -c start-private-browser -f -l verbose            -d 'provide additional information output'
 complete -c start-private-browser -f -l list               -d 'list of active spb sessions'
-complete -c start-private-browser -f -l force-stop         -d 'force-close a hung browser session' -r -a '(__start_private_browser_list_sessions)'
+complete -c start-private-browser -f -l force-stop         -d 'kill a hung browser session' -r -a '(__start_private_browser_list_sessions)'
 complete -c start-private-browser -f -l update             -d 'update SPB system and fish snippets'
 
 # multi-browser support
@@ -41,11 +41,11 @@ complete -c start-private-browser -f -l edit-configuration -d 'edit active spb c
 
 # supporting fuctions - dynamic list generation
 function __start_private_browser_list_templates
-    start-private-browser --quite --list-templates | awk '{ print$2 }'
+    start-private-browser --quiet --list-templates | awk '{ print$2 }'
 end
 function __start_private_browser_list_browsers
-    start-private-browser --quite --list-browsers
+    start-private-browser --quiet --list-browsers
 end
 function __start_private_browser_list_sessions
-    start-private-browser --quite --list
+    start-private-browser --quiet --list
 end
