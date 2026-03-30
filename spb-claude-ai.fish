@@ -21,7 +21,7 @@ function spb-claude
                 case  '--standard' '--quite' '--quiet' '--verbose' '--about'
                     echo "$argv[1]"
                 case '*'
-                    echo (echo "https://claude.ai/new?q=/$argv[1]" | tr " " "+")
+                    echo (echo "https://claude.ai/new?q=$argv[1]" | tr " " "+")
                     set url_count (math $url_count + 1)
             end
             set --erase argv[1]
