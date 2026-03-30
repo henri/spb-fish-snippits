@@ -13,6 +13,7 @@
 # version 1.3 - added support for dynamic lists
 # version 1.4 - updates to correct quite calls
 # version 1.5 - minor description update for force-stop option
+# version 1.6 - added support for listig spb enviroment variables
 #
 
 # get help
@@ -40,6 +41,8 @@ complete -c start-private-browser -f -l template-path      -d 'override default 
 
 # configuration file
 complete -c start-private-browser -f -l edit-configuration -d 'edit active spb configuration file'
+complete -c start-private-browser -f -l --configuration-variables -d 'list possible spb.config enviroment variables'
+
 
 # supporting fuctions - dynamic list generation
 function __start_private_browser_list_templates
