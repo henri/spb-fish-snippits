@@ -15,7 +15,7 @@ function spb-rum
                     echo "$argv[1]"
                     echo "$argv[2]"
                     set --erase argv[1]
-                case '--help' '--list' '-ls' '-l' '--list-templates' '--update' '--tor' '--list-browsers' '--configuration-variables'
+                case '--help' '--list' '-ls' '-l' '--list-templates' '--update' '--tor' '--list-browsers' '--configuration-variables' '--version'
                     echo "$argv[1]"
                     break
                 case  '--standard' '--quite' '--quiet' '--verbose' '--about'
