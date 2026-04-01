@@ -165,7 +165,7 @@ function create_or_update_start_private_browser_alias() {
     echo "    fish alias : 'start-private-browser ->~/bin/start-private-browser.bash' :"
     fish -c "alias -s start-private-browser=\"~/bin/start-private-browser.bash\" 2> /dev/null && funcsave start-private-browser"
     if [[ ${?} == 0 ]]  ; then
-        echo -e "                 ${tick_mark} [ configured successfully ]"
+        echo -e "                 ${tick_mark}  [ configured successfully ]"
     echo ""
     else
         echo "                    x [ error during setup ]"
@@ -185,7 +185,7 @@ if [[ "${SPB_FISH_FUNCTION_SKIP_OVERWRITE_CHECK}" == "true" ]] ; then
 fi
 if [[ ${existing_and_home_bin_start_private_browser_alias_return_code} == 0 ]] ; then 
     echo "    fish alias : 'start-private-browser -> ~/bin/start-private-browser.bash' :"
-    echo -e "                 ${tick_mark} [ skipped ] already configured (exact match)"
+    echo -e "                 ${tick_mark}  [ skipped ] already configured (exact match)"
     echo ""
 else
     if [[ "${SPB_FISH_FUNCTION_SKIP_OVERWRITE_CHECK}" != "true" ]] ; then
@@ -228,7 +228,7 @@ echo ""
 # install an alias for spb -> start-private-browser (yep we do that as well)
 if [[ ${existing_spb_alias_return_code} == 0 ]]  ; then
     echo "    fish alias : 'spb -> start-private-browser' :"
-    echo -e "                 ${tick_mark} [ skipped ] already configured (exact matching is not checked)"
+    echo -e "                 ${tick_mark}  [ skipped ] already configured (exact matching is not checked)"
 else
     # no existing spb fish alias configured ; so we setup the alias
     echo "fish alias : 'spb -> start-private-browser' : "
@@ -271,7 +271,7 @@ if [[ ${?} != 0 ]] ; then
     exit -7
 fi
 fish -c "source ~/.config/fish/completions/start-private-browser.fish > /dev/null"
-echo -e "                 ${tick_mark} [ configured ]  ~/.config/fish/completions/start-private-browser.fish"
+echo -e "                 ${tick_mark}  [ configured ]  ~/.config/fish/completions/start-private-browser.fish"
 if ! [ -f ./completion/spb-update-completions.fish ] ; then
     echo "ERROR! : unable to locate completion : "
     echo "         $PWD/spb-completions.fish" ; echo ""
