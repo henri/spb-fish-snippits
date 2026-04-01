@@ -270,7 +270,7 @@ if [[ ${?} != 0 ]] ; then
     exit -7
 fi
 fish -c "source ~/.config/fish/completions/start-private-browser.fish > /dev/null"
-echo -e "                 ${tick_mark} [ configured ]  ~/.config/fish/completions/start-private-browser.fish" ; echo ""
+echo -e "                 ${tick_mark} [ configured ]  ~/.config/fish/completions/start-private-browser.fish"
 if ! [ -f ./completion/spb-update-completions.fish ] ; then
     echo "ERROR! : unable to locate completion : "
     echo "         $PWD/spb-completions.fish" ; echo ""
@@ -283,7 +283,8 @@ if [[ ${?} != 0 ]] ; then
     exit -7
 fi
 fish -c "source ~/.config/fish/completions/spb-update.bash.fish > /dev/null"
-echo -e "                 ${tick_mark} [ configured ]  ~/.config/fish/completions/spb-update.bash.fish" ; echo ""
+echo -e "                 ${tick_mark} [ configured ]  ~/.config/fish/completions/spb-update.bash.fish"
+echo ""
 
 # echo -e "\n    --- fish auto completions installed succesfully --- " ; echo ""
 
