@@ -224,7 +224,6 @@ else
 fi
 echo ""
 
-
 # install an alias for spb -> start-private-browser (yep we do that as well)
 if [[ ${existing_spb_alias_return_code} == 0 ]]  ; then
     echo "    fish alias : 'spb -> start-private-browser' :"
@@ -358,5 +357,7 @@ echo "${fish_spb_snippits_repository_link}" ; echo ""
 # clean up
 cd /tmp/ && rm -rf ${temporary_build_directory}
 exit ${?}
+
+
 
 
