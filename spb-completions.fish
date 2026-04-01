@@ -15,6 +15,7 @@
 # version 1.5 - minor description update for force-stop option
 # version 1.6 - added support for listig spb enviroment variables
 # version 1.7 - added version option
+# version 1.8 - added spb-update.bash support
 #
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
