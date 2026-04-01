@@ -356,7 +356,9 @@ echo "        rm -v ~/.config/fish/functions/spb-*.fish"
 echo ""
 echo "    uninstall spb fish auto-completions : "
 echo "        rm -v ~/.config/fish/completions/spb-completions.fish"
+if [[ "${os_type}" != "darwin" ]] ; then
 echo "        rm -v ~/.config/fish/completions/spb-update.bash.fish"
+fi
 echo "" ; echo "" 
 echo "Documentation and usage instructions for spb fish functions is available from : "
 echo "${fish_spb_snippits_repository_link}" ; echo ""
