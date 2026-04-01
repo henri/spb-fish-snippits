@@ -66,6 +66,9 @@ spb-claude-ai.fish
 tick_mark='\xE2\x9C\x94'
 bullet_mark='\xE2\x80\xA2'
 
+# os detection
+os_type=$(uname -s | tr '[:upper:]' '[:lower:]')
+
 # setup enviroment varibles
 if [[ "${SPB_FISH_FUNCTION_SKIP_OVERWRITE_CHECK}" != "true" ]] ; then
     # SPB_SKIP_OVERWRITE_CHECK enviroment varible not detected ; set to false (default)
@@ -271,19 +274,23 @@ if [[ ${?} != 0 ]] ; then
 fi
 fish -c "source ~/.config/fish/completions/start-private-browser.fish > /dev/null"
 echo -e "                 ${tick_mark}  [ configured ]  ~/.config/fish/completions/start-private-browser.fish"
-if ! [ -f ./completion/spb-update-completions.fish ] ; then
-    echo "ERROR! : unable to locate completion : "
-    echo "         $PWD/spb-completions.fish" ; echo ""
-    exit -5
+if [[ "${os_type}" != "darwin" ]] ; then 
+    # currently macOS versions of fish new and old have issues with loading the .bash.fish completion files
+    # once we have a work around put it in place for now skip completions for ~/bin/spb-update.bash
+    if ! [ -f ./completion/spb-update-completions.fish ] ; then
+        echo "ERROR! : unable to locate completion : "
+        echo "         $PWD/spb-completions.fish" ; echo ""
+        exit -5
+    fi
+    cp ./completion/spb-update-completions.fish ~/.config/fish/completions/spb-update.bash.fish
+    if [[ ${?} != 0 ]] ; then
+        echo "ERROR! : unable to install spb fish completion : "
+        echo "         ~/.config/fish/completions/spb-update.bash.fish" ; echo ""
+        exit -7
+    fi
+    fish -c "source ~/.config/fish/completions/spb-update.bash.fish > /dev/null"
+    echo -e "                 ${tick_mark}  [ configured ]  ~/.config/fish/completions/spb-update.bash.fish"
 fi
-cp ./completion/spb-update-completions.fish ~/.config/fish/completions/spb-update.bash.fish
-if [[ ${?} != 0 ]] ; then
-    echo "ERROR! : unable to install spb fish completion : "
-    echo "         ~/.config/fish/completions/spb-update.bash.fish" ; echo ""
-    exit -7
-fi
-fish -c "source ~/.config/fish/completions/spb-update.bash.fish > /dev/null"
-echo -e "                 ${tick_mark}  [ configured ]  ~/.config/fish/completions/spb-update.bash.fish"
 echo -e "\n    --- fish auto completions installed succesfully --- " ; echo ""
 
 # are we going to install the fish functions - check if there are alrady some and allow user to cancel if any are found
