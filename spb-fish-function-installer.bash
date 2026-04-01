@@ -287,8 +287,6 @@ fish -c "source ~/.config/fish/completions/spb-update.bash.fish > /dev/null"
 echo -e "                 ${tick_mark}  [ configured ]  ~/.config/fish/completions/spb-update.bash.fish"
 echo -e "\n    --- fish auto completions installed succesfully --- " ; echo ""
 
-exit -9
-
 # are we going to install the fish functions - check if there are alrady some and allow user to cancel if any are found
 echo "Fish functions related to SPB (start private browser) : " ; echo ""
 if [[ "${SPB_FISH_FUNCTION_SKIP_OVERWRITE_CHECK}" == "false" ]] ; then
