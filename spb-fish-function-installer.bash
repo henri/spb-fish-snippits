@@ -252,16 +252,16 @@ echo ""
 # install the spb auto completions
 echo "Fish completions related to SPB (start private browser) : " ; echo ""
 echo "    fish auto-completion configuration : "
-if ! [ -f ./spb-completions.fish ] ; then
-    echo "ERROR! : unable to locate completion : "
-    echo "         $PWD/spb-completions.fish" ; echo ""
-    exit -5
-fi
 mkdir -p ~/.config/fish/completions
 if [[ ${?} != 0 ]] ; then
     echo "ERROR! : unable to locate or create fish completion direcotry: "
     echo "         ~/.config/fish/completions" ; echo ""
     exit -6
+fi
+if ! [ -f ./spb-completions.fish ] ; then
+    echo "ERROR! : unable to locate completion : "
+    echo "         $PWD/spb-completions.fish" ; echo ""
+    exit -5
 fi
 cp ./spb-completions.fish ~/.config/fish/completions/start-private-browser.fish
 if [[ ${?} != 0 ]] ; then
@@ -271,6 +271,11 @@ if [[ ${?} != 0 ]] ; then
 fi
 fish -c "source ~/.config/fish/completions/start-private-browser.fish > /dev/null"
 echo -e "                 ${tick_mark} [ configured ]  ~/.config/fish/completions/start-private-browser.fish" ; echo ""
+if ! [ -f ./spb-update-competions.fishh ] ; then
+    echo "ERROR! : unable to locate completion : "
+    echo "         $PWD/spb-completions.fish" ; echo ""
+    exit -5
+fi
 cp ./spb-update-competions.fish ~/.config/fish/completions/spb-update.bash.fish
 if [[ ${?} != 0 ]] ; then
     echo "ERROR! : unable to install spb fish completion : "
