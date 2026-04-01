@@ -35,6 +35,7 @@
 # version 2.6 - added spb-update.bash fish auto-completions
 
 
+
 # configuration
 SPB_BUILD_DIRECTORY_NAME="spb-build-fish-functions"
 SPB_DOWNLOAD_DIRECTORY_NAME="spb-fish-functions-latest"
