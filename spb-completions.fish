@@ -15,12 +15,7 @@
 # version 1.5 - minor description update for force-stop option
 # version 1.6 - added support for listig spb enviroment variables
 # version 1.7 - added version option
-# version 1.8 - added spb-update.bash support
 #
-
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
-# spb                                                                 #
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 # get help
 complete -c start-private-browser -f -l help                     -d 'display help'
@@ -61,16 +56,4 @@ end
 function __start_private_browser_list_sessions
     start-private-browser --quiet --list
 end
-
-
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
-# spb-update                                                          #
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-
-# get help
-complete -c spb-update.bash       -f -l help                     -d 'display help'
-
-# generic options
-complete -c spb-update.bash       -f -l no-delay                 -d 'prevent random delay when connected to tty'
-complete -c spb-update.bash       -f -l auto-monitoring          -d 'behave like there is no tty connected'
 
