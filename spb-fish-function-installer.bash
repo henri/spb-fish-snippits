@@ -271,7 +271,7 @@ if [[ ${?} != 0 ]] ; then
 fi
 fish -c "source ~/.config/fish/completions/start-private-browser.fish > /dev/null"
 echo -e "                 ${tick_mark} [ configured ]  ~/.config/fish/completions/start-private-browser.fish" ; echo ""
-cp ./spb-update-completions.fish ~/.config/fish/completions/spb-update.bash.fish
+cp ./spb-update-competions.fish ~/.config/fish/completions/spb-update.bash.fish
 if [[ ${?} != 0 ]] ; then
     echo "ERROR! : unable to install spb fish completion : "
     echo "         ~/.config/fish/completions/spb-update.bash.fish" ; echo ""
