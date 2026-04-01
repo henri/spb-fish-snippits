@@ -314,7 +314,6 @@ else
 fi
 echo ""
 
-
 # prevent exit if we hit an error and remove the EXIT trap
 set +e
 trap - EXIT
