@@ -33,6 +33,7 @@
 # version 2.4 - improvements to output formating for fish auto-completions
 # version 2.5 - additional improvements to output formating
 # version 2.6 - added spb-update.bash fish auto-completions
+# version 2.7 - bug fixes
 
 
 
@@ -285,6 +286,8 @@ fi
 fish -c "source ~/.config/fish/completions/spb-update.bash.fish > /dev/null"
 echo -e "                 ${tick_mark}  [ configured ]  ~/.config/fish/completions/spb-update.bash.fish"
 echo -e "\n    --- fish auto completions installed succesfully --- " ; echo ""
+
+exit -9
 
 # are we going to install the fish functions - check if there are alrady some and allow user to cancel if any are found
 echo "Fish functions related to SPB (start private browser) : " ; echo ""
