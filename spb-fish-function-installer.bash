@@ -32,6 +32,7 @@
 # version 2.3 - fixed bug relating to non-interactive auto updates
 # version 2.4 - improvements to output formating for fish auto-completions
 # version 2.5 - additional improvements to output formating
+# version 2.6 - added spb-update.bash fish auto-completions
 
 
 # configuration
@@ -270,6 +271,15 @@ if [[ ${?} != 0 ]] ; then
 fi
 fish -c "source ~/.config/fish/completions/start-private-browser.fish > /dev/null"
 echo -e "                 ${tick_mark} [ configured ]  ~/.config/fish/completions/start-private-browser.fish" ; echo ""
+cp ./spb-update-completions.fish ~/.config/fish/completions/spb-update.bash.fish
+if [[ ${?} != 0 ]] ; then
+    echo "ERROR! : unable to install spb fish completion : "
+    echo "         ~/.config/fish/completions/spb-update.bash.fish" ; echo ""
+    exit -7
+fi
+fish -c "source ~/.config/fish/completions/spb-update.bash.fish > /dev/null"
+echo -e "                 ${tick_mark} [ configured ]  ~/.config/fish/completions/spb-update.bash.fish" ; echo ""
+
 # echo -e "\n    --- fish auto completions installed succesfully --- " ; echo ""
 
 # are we going to install the fish functions - check if there are alrady some and allow user to cancel if any are found
