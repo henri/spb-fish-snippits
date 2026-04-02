@@ -60,6 +60,7 @@ spb-ody.fish
 spb-twitch.fish
 spb-smart.fish
 spb-claude-ai.fish
+spb-chatgpt.fish
 "
 
 # special symbold
