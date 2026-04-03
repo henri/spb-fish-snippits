@@ -275,23 +275,21 @@ if [[ ${?} != 0 ]] ; then
 fi
 fish -c "source ~/.config/fish/completions/start-private-browser.fish > /dev/null"
 echo -e "                 ${tick_mark}  [ configured ]  ~/.config/fish/completions/start-private-browser.fish"
-if [[ "${os_type}" != "darwin" ]] ; then 
-    # currently macOS versions of fish new and old have issues with loading the .bash.fish completion files
-    # once we have a work around put it in place for now skip completions for ~/bin/spb-update.bash
-    if ! [ -f ./completion/spb-update-completions.fish ] ; then
-        echo "ERROR! : unable to locate completion : "
-        echo "         $PWD/spb-completions.fish" ; echo ""
-        exit -5
-    fi
-    cp ./completion/spb-update-completions.fish ~/.config/fish/completions/spb-update.bash.fish
-    if [[ ${?} != 0 ]] ; then
-        echo "ERROR! : unable to install spb fish completion : "
-        echo "         ~/.config/fish/completions/spb-update.bash.fish" ; echo ""
-        exit -7
-    fi
-    fish -c "source ~/.config/fish/completions/spb-update.bash.fish > /dev/null"
-    echo -e "                 ${tick_mark}  [ configured ]  ~/.config/fish/completions/spb-update.bash.fish"
+# currently macOS versions of fish new and old have issues with loading the .bash.fish completion files
+# once we have a work around put it in place for now skip completions for ~/bin/spb-update.bash
+if ! [ -f ./completion/spb-update-completions.fish ] ; then
+    echo "ERROR! : unable to locate completion : "
+    echo "         $PWD/spb-completions.fish" ; echo ""
+    exit -5
 fi
+cp ./completion/spb-update-completions.fish ~/.config/fish/completions/spb-update.bash.fish
+if [[ ${?} != 0 ]] ; then
+    echo "ERROR! : unable to install spb fish completion : "
+    echo "         ~/.config/fish/completions/spb-update.bash.fish" ; echo ""
+    exit -7
+fi
+fish -c "source ~/.config/fish/completions/spb-update.bash.fish > /dev/null"
+echo -e "                 ${tick_mark}  [ configured ]  ~/.config/fish/completions/spb-update.bash.fish"
 echo -e "\n    --- fish auto completions installed succesfully --- " ; echo ""
 
 # are we going to install the fish functions - check if there are alrady some and allow user to cancel if any are found
@@ -357,9 +355,7 @@ echo "        rm -v ~/.config/fish/functions/spb-*.fish"
 echo ""
 echo "    uninstall spb fish auto-completions : "
 echo "        rm -v ~/.config/fish/completions/spb-completions.fish"
-if [[ "${os_type}" != "darwin" ]] ; then
 echo "        rm -v ~/.config/fish/completions/spb-update.bash.fish"
-fi
 echo "" ; echo "" 
 echo "Documentation and usage instructions for spb fish functions is available from : "
 echo "${fish_spb_snippits_repository_link}" ; echo ""
