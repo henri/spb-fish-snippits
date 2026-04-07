@@ -1,5 +1,5 @@
 
-# one line command to configure spb-chatgpt functioin to start multiple perplexity ai a chats in multiple private browser tabs.
+# one line command to configure spb-chatgpt functioin to start multiple open ai - chat GPT chats in multiple private browser tabs.
 # this function requires spb (start-private-browser) alias to be configured : https://github.com/henri/spb
 # this function requires an alias 'start-private-browser' and 'spb' to be setup eg :
 # alias --save start-private-browser="~/bin/start-private-browser.bash"
