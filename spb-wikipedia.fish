@@ -20,13 +20,13 @@ function spb-wikipedia
                 case  '--standard' '--quite' '--quiet' '--verbose' '--about'
                     echo "$argv[1]"
                 case '*'
-                    echo (echo "https://en.wikipedia.org/w/index.php?search=$argv[1]" | tr " " "+")
+                    echo (echo "https://wikipedia.org/w/index.php?search=$argv[1]" | tr " " "+")
                     set url_count (math $url_count + 1)
             end
             set --erase argv[1]
         end 
         if test $url_count -eq 0
-            echo "https://gemini.google.com/"
+            echo "https://wikipedia.com/"
         end
     )
    spb $urls
