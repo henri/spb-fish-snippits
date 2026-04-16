@@ -26,7 +26,7 @@ function spb-imdb
             set --erase argv[1]
         end 
         if test $url_count -eq 0
-            echo "https://gemini.google.com/"
+            echo "https://imdb.com/"
         end
     )
    spb $urls
