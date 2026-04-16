@@ -62,6 +62,8 @@ spb-smart.fish
 spb-claude-ai.fish
 spb-chatgpt.fish
 spb-google-ai.fish
+spb-imdb.fish
+spb-wikipedia.fish
 "
 
 # special symbold
