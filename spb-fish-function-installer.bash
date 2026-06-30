@@ -347,7 +347,7 @@ done
 echo -e "\n     --- fish functions loaded succesfully --- " ; echo ""
 
 # print some helpful informaiton about finding more information
-echo "Uninstall instruction : "
+echo "Uninstall instructions (FISH snippits) : "
 echo ""
 echo "    uninstall spb fish alias :"
 echo "        rm -v ~/.config/fish/functions/spb.fish"
