@@ -360,7 +360,7 @@ echo "    uninstall spb fish auto-completions : "
 echo "        rm -v ~/.config/fish/completions/spb-completions.fish"
 echo "        rm -v ~/.config/fish/completions/spb-update.bash.fish"
 echo "" ; echo "" 
-echo "Documentation and usage instructions for spb fish functions is available from : "
+echo "Documentation and usage instructions for spb fish functions : "
 echo "${fish_spb_snippits_repository_link}" ; echo ""
 
 # clean up
