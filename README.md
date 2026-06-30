@@ -4,7 +4,7 @@ These FISH snippits are specific to the [SPB (Start Private Browser)](https://gi
 
 This repository includes [FISH](https://fishshell.com/) code, functions, completions, alias and other related snippits which intergrate into the SPB project.
 
-The index of these fish snippits inlcudes <b>[usage examples](https://github.com/henri/spb#fish-shell-wrappers)</b> outlinging on how to use them to quickly access informaiton from the internet.
+The index of these fish snippits (found within the [SPB readme](https://github.com/henri/spb)) inlcudes <b>[usage examples](https://github.com/henri/spb#fish-shell-wrappers)</b> outlinging on how to use them to quickly access informaiton from the internet.
 
 Below you will also find an [installer file](spb-fish-function-installer.bash) and a [kick off file](https://github.com/henri/spb-fish-snippits/blob/main/spb-fish-function-installer-kickoff.bash). Copy and paste the kick off file into a BASH shell to start installation of the spb fish functions support files. If you install via the [SPB install script](https://github.com/henri/spb/blob/main/500.spb-install-script.bash) and already have the fish shell installed on your system, then during the install you will be prompted to update/install these spb related fish snippits.
 
@@ -16,6 +16,6 @@ Plus you can roll your own and if you build something to share with ohters, open
 
 In addition to functions, there are also auto completions to make using the SPB via the command line a little easier. Just press tab to get some hopefully helpful completion and explanations as you work.
 
-Note that if you override the spb command and add specific flags which firefox (for instance) will not recognise, then these snippits will fail to work with firefox. To work around this, it is reccomended that you create custom functions for firefox and it's drivitives. If I come up with a good way to make this work, then I will update this message. Right now SPB FireFox browser support is still experimental. 
+Note that if you override the spb command and add specific flags which firefox (for instance) will not recognise, then these snippits will fail to work with firefox. If you would like to launch different browser with default aguments, this is supported within the [spb.config](https://github.com/henri/spb/blob/main/README.md#spb-configuration-file) file. [SPB configuration exampls](https://github.com/henri/spb/tree/main/300.configuration-examples) are avaukvke to get you swimming fast!
 
 Have fun swimming :tropical_fish:
