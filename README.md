@@ -1,11 +1,11 @@
 # SPB specific fish snippits
 
+These FISH snippits are specific to the [SPB (Start Private Browser)](https://github.com/henri/spb) project.
+
 <p align="left">
   <a href="https://github.com/henri/spb/#lock-spb-start-private-browser">
     <img src="https://henri.github.io/spb/SPB_logo_with_text_with_boarder_tranparent_v1.png" width="35%"></a>
 </p>
-
-These FISH snippits are specific to the [SPB (Start Private Browser)](https://github.com/henri/spb) project.
 
 This repository includes [FISH](https://fishshell.com/) code, functions, completions, alias and other related snippits which intergrate into the SPB project.
 
