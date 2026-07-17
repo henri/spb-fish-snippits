@@ -20,7 +20,7 @@ function spb-rotten-tomatoes
                 case  '--standard' '--quite' '--quiet' '--verbose' '--about'
                     echo "$argv[1]"
                 case '*'
-                    echo (echo "https://https://www.rottentomatoes.com/search?search=$argv[1]" | tr " " "+")
+                    echo (echo "https://www.rottentomatoes.com/search?search=$argv[1]" | tr " " "+")
                     set url_count (math $url_count + 1)
             end
             set --erase argv[1]
