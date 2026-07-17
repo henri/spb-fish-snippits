@@ -34,6 +34,7 @@
 # version 2.5 - additional improvements to output formating
 # version 2.6 - added spb-update.bash fish auto-completions
 # version 2.7 - bug fixes
+# version 2.8 - added rotten tomatoes to the mix
 
 
 # configuration
@@ -63,6 +64,7 @@ spb-claude-ai.fish
 spb-chatgpt.fish
 spb-google-ai.fish
 spb-imdb.fish
+spb-rotten-tomatoes.fish
 spb-wikipedia.fish
 "
 
