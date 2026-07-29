@@ -15,6 +15,7 @@
 # version 1.5 - minor description update for force-stop option
 # version 1.6 - added support for listig spb enviroment variables
 # version 1.7 - added version option
+# version 1.8 - install brave-new.bash option
 #
 
 # get help
@@ -45,6 +46,8 @@ complete -c start-private-browser -f -l template-path            -d 'override de
 complete -c start-private-browser -f -l edit-configuration       -d 'edit active spb configuration file'
 complete -c start-private-browser -f -l configuration-variables  -d 'list possible spb.config enviroment variables'
 
+# additional support
+complete -c start-private-browser -f -l --install-brave-new       -d 'install example brave-new.bash configuraiton helper script'
 
 # supporting fuctions - dynamic list generation
 function __start_private_browser_list_templates
