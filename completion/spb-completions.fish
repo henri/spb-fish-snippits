@@ -16,6 +16,7 @@
 # version 1.6 - added support for listig spb enviroment variables
 # version 1.7 - added version option
 # version 1.8 - install brave-new.bash option
+# version 1.9 - added licence option
 #
 
 # get help
@@ -29,6 +30,7 @@ complete -c start-private-browser -f -l list                     -d 'list of act
 complete -c start-private-browser -f -l force-stop               -d 'kill a hung browser session' -r -a '(__start_private_browser_list_sessions)'
 complete -c start-private-browser -f -l update                   -d 'update SPB system and fish snippets'
 complete -c start-private-browser -f -l version                  -d 'report SPB version information'
+complete -c start-private-browser -f -l version                  -d 'report SPB licence information'
 
 # multi-browser support
 complete -c start-private-browser -f -l browser                  -d 'configure the use of a specific browser' -r -a '(__start_private_browser_list_browsers)'
