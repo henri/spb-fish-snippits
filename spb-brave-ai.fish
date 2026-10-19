@@ -21,7 +21,7 @@ function spb-brave-ai
                 case '--help' '--list' '-ls' '-l' '--list-templates' '--update' '--tor' '--list-browsers' '--configuration-variables' '--version'
                     echo "$argv[1]"
                     break
-                case  '--standard' '--quite' '--quiet' '--verbose' '--about'
+                case  '--standard' '--quite' '--quiet' '--verbose' '--about' '--licence'
                     echo "$argv[1]"
                 case '*'
                     echo (echo "https://search.brave.com/search?q=$argv[1]&summary=1&conversation" | tr " " "+")
