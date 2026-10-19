@@ -19,7 +19,7 @@ function spb-ddg-ai
                 case '--help' '--list' '-ls' '-l' '--list-templates' '--update' '--tor' '--list-browsers' '--configuration-variables' '--version'
                     echo "$argv[1]"
                     break
-                case  '--standard' '--quite' '--quiet' '--verbose' '--about'
+                case  '--standard' '--quite' '--quiet' '--verbose' '--about' '--licence'
                     echo "$argv[1]"
                 case '*'
                     echo (echo "https://duckduckgo.com/?t=h_&q=$argv[1]&ia=chat&bang=true" | tr " " "+")
