@@ -18,7 +18,7 @@ function spb-claude
                 case '--help' '--list' '-ls' '-l' '--list-templates' '--update' '--tor' '--list-browsers' '--configuration-variables' '--version'
                     echo "$argv[1]"
                     break
-                case  '--standard' '--quite' '--quiet' '--verbose' '--about'
+                case  '--standard' '--quite' '--quiet' '--verbose' '--about' '--licence'
                     echo "$argv[1]"
                 case '*'
                     echo (echo "https://claude.ai/new?q=$argv[1]" | tr " " "+")
