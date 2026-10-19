@@ -17,7 +17,7 @@ function spb-imdb
                 case '--help' '--list' '-ls' '-l' '--list-templates' '--update' '--tor' '--list-browsers' '--configuration-variables' '--version'
                     echo "$argv[1]"
                     break
-                case  '--standard' '--quite' '--quiet' '--verbose' '--about'
+                case  '--standard' '--quite' '--quiet' '--verbose' '--about' '--licence'
                     echo "$argv[1]"
                 case '*'
                     echo (echo "https://www.imdb.com/find/?q=$argv[1]" | tr " " "+")
