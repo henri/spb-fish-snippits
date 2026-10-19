@@ -30,8 +30,8 @@ complete -c start-private-browser -f -l list                     -d 'list of act
 complete -c start-private-browser -f -l force-stop               -d 'kill a hung browser session' -r -a '(__start_private_browser_list_sessions)'
 complete -c start-private-browser -f -l update                   -d 'update SPB system and fish snippets'
 complete -c start-private-browser -f -l version                  -d 'report SPB version information'
-complete -c start-private-browser -f -l licence                  -d 'launch SPB and show SPB licence'
-complete -c start-private-browser -f -l about                    -d 'launch SPB and show SPB website'
+complete -c start-private-browser -f -l licence                  -d 'launch SPB and load SPB licence'
+complete -c start-private-browser -f -l about                    -d 'launch SPB and load SPB website'
 
 # multi-browser support
 complete -c start-private-browser -f -l browser                  -d 'configure the use of a specific browser' -r -a '(__start_private_browser_list_browsers)'
